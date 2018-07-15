@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blink</title>
+    </head>
+    <body>
+        <h1 id='greeting'>Hello World</h1>
+        <script>
+            function blink() {
+                var div = document.getElementById('greeting');
+                // Unfortunately, the variable can only go to the level of the div or else style changes won't affect the element
+                if (div.style.visibility == 'hidden') div.style.visibility = 'visible';
+                else div.style.visibility = 'hidden';
+            }
+
+            window.setInterval(blink, 500);
+        </script>
+    </body>
+</html>

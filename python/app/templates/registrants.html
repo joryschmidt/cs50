@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    {% if students %}
+        <ul>
+            {% for student in students %}
+                <li>{{ student }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <a href="/">Home</a>
+{% endblock %}
